@@ -28,13 +28,13 @@ type Types =
 
 interface LoaderProps {
     color?: string;
-    height?: number;
+    height?: number | string;
     radius?: number;
     secondaryColor?: string;
     timeout?: number; // in milliseconds
     type?: Types;
     visible?: boolean | string;
-    width?: number;
+    width?: number | string;
 }
 
 declare const Loader: FC<LoaderProps>;
